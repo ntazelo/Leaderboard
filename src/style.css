@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-title {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.cont-res {
+  width: 30%;
+}
+
+.cont-res > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.cont-res-dis {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cont-form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-form > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.cont-upd-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btn-upd,
+.btn-submit {
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn-upd:hover,
+.btn-submit:hover {
+  transform: scale(1.1);
+}
+
+.btn-upd:active,
+.btn-submit:active {
+  transform: scale(1);
+}
+
+.usr-name,
+.usr-score {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1.5px solid black;
+  font-family: inherit;
+  border-radius: 8px;
+}
+
+.usr-name:focus,
+.usr-score:focus {
+  outline: none;
+}
+
+.user-scr {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
