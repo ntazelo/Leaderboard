@@ -1,4 +1,4 @@
-export default function populate(data) {
+const populate = (data) => {
   const list = document.querySelector('.cont-res-dis');
   list.innerHTML = null;
   data.forEach((el, i) => {
@@ -15,4 +15,6 @@ export default function populate(data) {
     }
     list.appendChild(userScore);
   });
-}
+};
+
+export default populate;
