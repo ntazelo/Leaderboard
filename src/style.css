@@ -52,7 +52,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   max-height: 50vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .cont-res-dis::-webkit-scrollbar {
