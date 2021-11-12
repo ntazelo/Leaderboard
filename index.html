@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
     <title>Leaderboard</title>
-<script defer src="main.bundle.js"></script></head>
-<body>
-
-<section class="container">
-    <div class="cont-res">
-        <h1 class="heading-title">Leaderboard</h1>
-        <div class="cont-upd-btn">
+  <script defer src="main.bundle.js"></script></head>
+  <body>
+    <section class="container">
+      <div class="score-cont">
+        <div class="score-wrapper">
+          <h1 class="heading-title">Leaderboard</h1>
+          <div class="cont-upd-btn">
             <h2 class="btn-txt">Recent Scores</h2>
-            <button class="btn-upd">Refresh</button>
+            <button type="button" class="btn-upd">Refresh</button>
+          </div>
+          <ul class="cont-res-dis"></ul>
         </div>
-        <ul class="cont-res-dis">
-            <li class="user-scr"> Eloi: 3</li>
-            <li class="user-scr"> Eloi: 3</li>
-            <li class="user-scr"> Eloi: 3</li>
-            <li class="user-scr"> Eloi: 3</li>
-        </ul>
-    </div>
-    <div class="cont-form">
-    <h2 class="form-ttl">Add you score</h2>
-    <input type="text" class="usr-name">
-    <input type="text" class="usr-score">
-    <button type="submit" class="btn-submit">Submit</button>
-    </div>
-</section>
+      </div>
 
+      <div class="cont-form">
+        <div class="form-wrapper">
+          <h2 class="form-ttl">Add you score</h2>
+          <form method="post" class="form">
+            <input
+              type="text"
+              class="usr-name"
+              required
+              minlength="2"
+              placeholder="Enter your name"
+            />
+            <input
+              type="number"
+              class="usr-score"
+              required
+              placeholder="Enter your score"
+            />
+            <button type="submit" class="btn-submit sub">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
