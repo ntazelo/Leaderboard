@@ -83,17 +83,17 @@ body {
 
 .btn-upd,
 .btn-submit {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border: 1px solid slateblue;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: slateblue;
-  line-height: 1.1rem;
   background-color: #fff;
   box-shadow: 2px 2px 2px black;
   border-radius: 8px;
   cursor: pointer;
   align-self: center;
+  backface-visibility: hidden;
   transition: transform 0.3s;
 }
 
