@@ -6,7 +6,7 @@ const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 const id = 'f4qNRrUKtWgEVFl8Y7jY';
 const urlPost = `${URL}${id}/scores/`;
 
-export default function addPlayer() {
+const addPlayer = () => {
   const formSubm = document.querySelector('.form');
   const nameField = document.querySelector('.usr-name');
   const scoreField = document.querySelector('.usr-score');
@@ -26,4 +26,6 @@ export default function addPlayer() {
     nameField.value = '';
     scoreField.value = '';
   });
-}
+};
+
+export default addPlayer;

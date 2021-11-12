@@ -7,6 +7,8 @@ const btn = document.querySelector('.btn-upd');
 btn.addEventListener('click', () => {
   getScore().then((res) => {
     populate(res.data.result);
+  }).catch((err) => {
+    console.log(err);
   });
 });
 

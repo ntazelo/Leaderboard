@@ -4,7 +4,9 @@ const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 const id = 'f4qNRrUKtWgEVFl8Y7jY';
 const urlPost = `${URL}${id}/scores/`;
 
-export default async function getScore() {
+const getScore = async () => {
   const data = await axios.get(urlPost);
   return data;
-}
+};
+
+export default getScore;
