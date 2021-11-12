@@ -51,6 +51,32 @@ body {
   padding: 0.5rem;
   border-radius: 8px;
   overflow: hidden;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.cont-res-dis::-webkit-scrollbar {
+  width: 7px;
+  cursor: pointer;
+}
+
+.cont-res-dis::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 8px;
+}
+
+.cont-res-dis::-webkit-scrollbar-thumb {
+  background: slateblue;
+  border-radius: 8px;
+}
+
+.cont-res-dis::-webkit-scrollbar-thumb:hover {
+  background: slateblue;
+  border-radius: 8px;
+}
+
+.cont-res-dis::-webkit-scrollbar-thumb:active {
+  background: slateblue;
 }
 
 .cont-form {
