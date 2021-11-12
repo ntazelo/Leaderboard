@@ -8,36 +8,62 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 150%;
 }
 
 .heading-title {
-  font-size: 2rem;
+  align-self: flex-start;
+  color: slateblue;
 }
 
 .container {
   display: flex;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 5rem;
 }
 
-.cont-res {
-  width: 30%;
+.score-cont {
+  width: 50%;
 }
 
-.cont-res > *:not(:last-child) {
+.score-wrapper > *:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.score-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-txt {
+  color: slateblue;
+  font-size: 2rem;
 }
 
 .cont-res-dis {
   list-style: none;
-  border: 2px solid black;
+  border: 2px solid slateblue;
+  padding: 0.5rem;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .cont-form {
-  width: 30%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 55%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,19 +78,22 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .btn-upd,
 .btn-submit {
   padding: 0.5rem;
-  border: none;
+  border: 1px solid slateblue;
   font-size: 1.1rem;
   font-weight: 400;
+  color: slateblue;
   line-height: 1.1rem;
   background-color: #fff;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 2px black;
   border-radius: 8px;
   cursor: pointer;
+  align-self: center;
   transition: transform 0.3s;
 }
 
@@ -78,13 +107,27 @@ body {
   transform: scale(1);
 }
 
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.form-ttl {
+  color: slateblue;
+}
+
 .usr-name,
 .usr-score {
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
-  border: 1.5px solid black;
-  font-family: inherit;
-  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid slateblue;
+  font-family: "Poppins", sans-serif;
 }
 
 .usr-name:focus,
@@ -92,7 +135,28 @@ body {
   outline: none;
 }
 
+.sub {
+  align-self: flex-end;
+}
+
 .user-scr {
   padding: 0 1rem;
   font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 80%;
+    flex-direction: column-reverse;
+    margin: 5rem auto;
+  }
+
+  .score-cont {
+    width: 100%;
+  }
+
+  .cont-form {
+    width: 100%;
+  }
 }
