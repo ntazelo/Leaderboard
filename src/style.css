@@ -51,6 +51,32 @@ body {
   padding: 0.5rem;
   border-radius: 8px;
   overflow: hidden;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.cont-res-dis::-webkit-scrollbar {
+  width: 7px;
+  cursor: pointer;
+}
+
+.cont-res-dis::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 8px;
+}
+
+.cont-res-dis::-webkit-scrollbar-thumb {
+  background: slateblue;
+  border-radius: 8px;
+}
+
+.cont-res-dis::-webkit-scrollbar-thumb:hover {
+  background: slateblue;
+  border-radius: 8px;
+}
+
+.cont-res-dis::-webkit-scrollbar-thumb:active {
+  background: slateblue;
 }
 
 .cont-form {
@@ -83,18 +109,18 @@ body {
 
 .btn-upd,
 .btn-submit {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border: 1px solid slateblue;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: slateblue;
-  line-height: 1.1rem;
   background-color: #fff;
   box-shadow: 2px 2px 2px black;
   border-radius: 8px;
   cursor: pointer;
   align-self: center;
-  transition: transform 0.3s;
+  backface-visibility: hidden;
+  transition: all 0.3s;
 }
 
 .btn-upd:hover,
