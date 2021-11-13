@@ -120,7 +120,7 @@ body {
   cursor: pointer;
   align-self: center;
   backface-visibility: hidden;
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-upd:hover,

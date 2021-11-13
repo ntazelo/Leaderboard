@@ -17,6 +17,9 @@ Hi Everyone! I'm Ntazama Eloi here I built a Leaderboard app.
 
 If you're new to GitHub and just want to download this Leaderboard app, press the green button saying "Code", and then choose the "Download ZIP" option or clone it locally using this command : **git clone https://github.com/ntazelo/Leaderboard.git**
 
+- After cloning install the packages by running `npm install`
+- On the command prompt run `npm run build` to build the dist folder then run `npm start` to start it.
+
 
 # Contact & Author
 
